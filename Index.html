@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPo</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            cursor: default;
+            
+        }
+        #principal {
+           
+        }
+        #titulo{
+            text-align: center;
+            color: #2d3436;
+        }
+
+        #placar {
+           
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        #jogador,#computador{
+            flex-grow: 1;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+        }
+        #jogador h2,#computador h2{
+            margin: 0;
+            padding: 0;
+            
+        }
+        #jogador{
+            background-color: #ff7675;
+        }
+        #jogador #jogador-escolha,#computador #computador-escolha{
+            margin: 20px 0 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        #jogador #jogador-escolha li,#computador #computador-escolha li{
+            display: inline;
+            padding: 0 15px;
+        }
+        #jogador #jogador-escolha a, #computador #computador-escolha a{
+            opacity: .2;
+        }
+        #jogador #jogador-escolha a:hover{
+            opacity: 1;
+        }
+        #jogador #jogador-escolha img,#computador #computador-escolha img{
+           max-width: 80px;
+        }
+        #versus{
+          font-size: 80px;
+          padding: 0 40px;
+        }
+        #computador{
+            background-color: #3498db;
+        }
+        #computador-nome{
+            text-align: right;
+        }
+        #jogador-nome, #computador-nome{
+            font-size: 24px;
+        }
+        #jogador-pontos{
+            right: 20px;
+        }
+        #jogador-pontos, #computador-pontos{
+            font-size: 52px;
+            position: absolute;
+            top: 8px;
+        }
+
+        #mensagem {
+          background-color: #4b4b4b;
+          text-align: center;
+          border-radius: 5px;
+          margin: 20px 0;
+          padding: 20px;
+          font-size: 24px;
+          color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="titulo">Pedra, Papel e Tesoura</h1>
+        <div id="placar">
+          
+            <div id="jogador">
+                <h2 id="jogador-nome">Felipe</h2>
+                <span id="jogador-pontos">0</span>
+                <ul id="jogador-escolha">
+                    <li><a id="jogador-escolha-1" href=""><img src="img/pedra.png" alt=""></a></li>
+                    <li><a id="jogador-escolha-2" href=""><img src="img/papel.png" alt=""></a></li>
+                    <li><a id="jogador-escolha-3" href=""><img src="img/tesoura.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div id="versus">VS</div>
+            <div id="computador">
+                <h2 id="computador-nome">Computador</h2>
+                <span id="computador-pontos">0</span>
+                <ul id="computador-escolha">
+                    <li><a id="computador-escolha-1" href=""><img src="img/pedra.png" alt=""></a></li>
+                    <li><a id="computador-escolha-2" href=""><img src="img/papel.png" alt=""></a></li>
+                    <li><a id="computador-escolha-3" href=""><img src="img/tesoura.png" alt=""></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="mensagem">mensagens</div>
+    </div>
+</body>
+
+</html>
